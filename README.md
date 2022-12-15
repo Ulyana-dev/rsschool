@@ -1,2 +1,4 @@
 # rsschool-cv
-[My CV](https://github.com/Ulyana-dev/rsschool-cv/blob/gh-pages/cv.md)
+[CV#1](https://Ulyana-dev.github.io/rsschool-cv/cv)
+
+[CV#2](https://Ulyana-dev.github.io/rsschool-cv/)
