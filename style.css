@@ -1,0 +1,200 @@
+:root {
+    --header-height: 120px;
+    --aside-width: 40%;
+    --aside-color: rgb(0,0,0);
+    --white-text-color: white;
+    --text-left-padding: 10px 30px;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Poppins';
+    font-weight: 200;
+}
+
+a {
+    color: black;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    height: var(--header-height);
+    box-sizing: border-box;
+    padding: var(--text-left-padding);
+    position: relative;
+    background-color: white;
+}
+
+.header::before {
+    content: '';
+    display: block;
+    background-color: var(--aside-color);
+    height: var(--header-height);
+    width: var(--aside-width);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header__tittle {
+    margin-bottom: 0;
+    color: var(--white-text-color);
+    mix-blend-mode: difference;
+    letter-spacing: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.header__suptittle {
+    color: var(--white-text-color);
+    font-weight: 100;
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.header__vertical-line {
+    background-color: black;
+    width: 2px;
+    height: 1000px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+}
+
+.header__cube {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+}
+
+.content {
+    display: flex;
+    height: 700px;
+    margin-bottom: 20px;
+}
+
+.aside {
+    flex-basis: var(--aside-width);
+    background-color: var(--aside-color);
+    color: var(--white-text-color);
+    position: relative;
+}
+
+.aside__photo {
+    width: 100%; 
+}
+
+.aside__tittle {
+    color: var(--white-text-color);
+    padding: var(--text-left-padding);
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.aside__info {
+    color: var(--white-text-color);
+    padding: var(--text-left-padding);
+    margin: 0;
+    font-weight: 100;
+}
+
+.aside__horizontal-line {
+    background-color: white;
+    height: 1px;
+    width: 150px;
+    margin: 10px 0;
+}
+
+.aside__contacts ul {
+    list-style-type: none;
+    padding: var(--text-left-padding);
+    margin: 0;
+}
+
+.aside__contacts-item {
+    margin-bottom: 10px;
+}
+
+.aside__contacts-item a {
+    display: flex;
+    gap: 10px;
+    color: var(--white-text-color);
+    text-decoration: none;
+}
+
+.aside__contacts-item img {
+    width: 20px;
+}
+
+main {
+    flex-grow: 1;
+    padding-top: 80px;
+    background-color: white;
+}
+
+.content-part {
+    border-top: 2px solid black;
+    padding: var(--text-left-padding);
+}
+
+.content-part__tittle {
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.footer {
+    height: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--white-text-color);
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+footer::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    position: absolute;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    z-index: -1;
+}
+
+.footer__contacts ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer__contacts-item img {
+    width: 20px;
+}
+
+.school-logo {
+    background-color: white;
+}
+.school-logo img {
+    color: wheat;
+    height: 35px;
+    width: 120px;
+    background-color: white;
+}
