@@ -38,6 +38,8 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: var(--color-black);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 .white-color {
@@ -47,10 +49,6 @@ body {
 .container {
     margin: 0 auto;
     width: 1280px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
 }
 
 .header {
@@ -64,10 +62,13 @@ body {
     box-sizing: border-box;
 }
 
-.header span {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 32px;
-    line-height: 32px;
+.header_pets {
+    position: static;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__logo {
@@ -111,15 +112,17 @@ body {
     flex-grow: 1;
 }
 
-.main.push-top {
-    margin-top: 120px;
-}
-
 .banner {
-    background-image: url(assets/Start\ screen.png);
     height: 908px;
     box-sizing: border-box;
-    padding: var(--content-padding);
+    background: url(assets/start-screen-background.png) no-repeat center center/cover;
+    display: flex;
+    align-items: end;
+}
+
+.banner .container {
+    display: flex;
+    gap: 42px;
 }
 
 .banner__title {
@@ -151,10 +154,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: var(--content-padding);
     padding-top: 80px;
     padding-bottom: 100px;
     color: var(--color-black);
+}
+
+.content-item .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .content-item__title {
@@ -177,7 +185,8 @@ body {
     text-align: center;
 }
 
-.content-item_slider {
+.content-item_slider .container {
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: stretch;
@@ -192,6 +201,7 @@ body {
 
 .slider {
     display: flex;
+    gap: 30px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -237,7 +247,8 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.content-item_we-need-list {
+.content-item_we-need-list .container {
+    display: flex;
     flex-direction: column;
     gap: 60px;
 }
@@ -278,19 +289,22 @@ body {
     gap: 15px;
 }
 
-
 .footer {
-    background-image: url(assets/footer-background.png);
+    background: url(assets/footer-background.png) no-repeat center center/cover;
     flex-shrink: 0;
     display: flex;
-    justify-content: space-between;
     flex-basis: auto;
-    padding: 40px 40px 0 40px;
     box-sizing: border-box;
     color: var(--color-primary);
+    padding-top: 40px;
 }
 
-.footer div {
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__column {
     display: flex;
     flex-direction: column;
     gap: 40px;

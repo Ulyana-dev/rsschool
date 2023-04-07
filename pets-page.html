@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shelter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/about-pets.png" type="image/png">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
+    <header class="header header_pets">
+        <div class="container">
             <div class="header__logo">
                 <a href="./index.html">
                     <img src="assets/Title grey.png" alt="">
@@ -34,9 +35,11 @@
                     </li>
                 </ul>
             </div>
-        </header>
-        <div class="main push-top">
-            <div class="content-item content-item_slider">
+        </div>
+    </header>
+    <div class="main">
+        <div class="content-item content-item_slider">
+                <div class="container">
                 <h3 class="text-medium content-item__title">
                     Our friends who <br> are looking for a house
                 </h3>
@@ -101,15 +104,17 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__column">
                 <h3 class="text-medium content-item__title">
                     For questions and suggestions
                 </h3>
                 <div class="footer__navbar">
                     <ul>
                         <li>
-                            <a href="email@shelter.com">
+                            <a href="mailto:email@shelter.com">
                                 <img src="assets/icon-email.svg" alt="">
                                 email@shelter.com
                             </a>
@@ -123,20 +128,20 @@
                     </ul>
                 </div>
             </div>
-            <div>
+            <div class="footer__column">
                 <h3 class="text-medium content-item__title">
                     We are waiting for your visit
                 </h3>
                 <div class="footer__navbar">
                     <ul>
                         <li>
-                            <a href="">
+                            <a target="_blank" href="https://www.google.com/maps?q=1 Central Street, Boston (entrance from the store)">
                                 <img src="assets/pin.png" alt="">
                                 1 Central Street, Boston (entrance from the store)
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a target="_blank" href="https://www.google.com/maps?q=18 South Park, London">
                                 <img src="assets/pin.png" alt="">
                                 18 South Park, London
                             </a>
@@ -145,8 +150,8 @@
                 </div>
             </div>
             <img src="assets/footer-puppy.png" alt="">
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>

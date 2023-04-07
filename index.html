@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shelter</title>
+    <link rel="icon" href="assets/about-pets.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header light-text">
+    <header class="header light-text">
+        <div class="container">
             <div class="header__logo">
                 <a href="./index.html">
                     <img src="assets/Title.png" alt="">
@@ -24,7 +25,7 @@
                         <a class="navbar__link navbar__link_active" href="#about-the-shelter">About the shelter</a>
                     </li>
                     <li>
-                        <a class="navbar__link" href="/rsschool-cv/pets-page.html">Our pets</a>
+                        <a class="navbar__link" href="./pets-page.html">Our pets</a>
                     </li>
                     <li>
                         <a class="navbar__link" href="#help-the-shelter">Help the shelter</a>
@@ -34,9 +35,11 @@
                     </li>
                 </ul>
             </div>
-        </header>
-        <main class="main">
-            <div class="banner">
+        </div>
+    </header>
+    <main class="main">
+        <div class="banner">
+            <div class="container">
                 <div class="banner__title">
                     <h2 class="text-large content-item__title">Not only people <br> need a house</h2>
                     <p>We offer to give a chance to a little and nice puppy with an extremely <br> wide and open heart.
@@ -44,8 +47,11 @@
                     </p>
                     <button class="button">Make a friend</button>
                 </div>
+                <img src="assets/start-screen-puppy.png" alt="">
             </div>
-            <div class="content-item" id="about-the-shelter">
+        </div>
+        <div class="content-item" id="about-the-shelter">
+            <div class="container">
                 <img src="assets/about-pets.png" alt="">
                 <div class="content-text">
                     <h2 class="text-medium content-item__title">
@@ -65,7 +71,9 @@
                     </p>
                 </div>
             </div>
-            <div class="content-item content-item_slider">
+        </div>
+        <div class="content-item content-item_slider" id="pets">
+            <div class="container">
                 <h3 class="text-medium content-item__title">
                     Our friends who <br> are looking for a house
                 </h3>
@@ -96,7 +104,9 @@
                     <button class="button">Get to know the rest</button>
                 </div>
             </div>
-            <div class="content-item content-item_we-need-list" id="help-the-shelter">
+        </div>
+        <div class="content-item content-item_we-need-list" id="help-the-shelter">
+            <div class="container">
                 <h3 class="text-medium content-item__title">
                     How you can help <br>
                     our shelter
@@ -140,8 +150,12 @@
                     </div>
                 </div>
             </div>
-            <div class="content-item content-item_donation" id="contacts">
-                <img src="assets/donation-dog.png" alt="">
+        </div>
+        <div class="content-item content-item_donation" id="contacts">
+            <div class="container">
+                <div>
+                    <img src="assets/donation-dog.png" alt="">
+                </div>
                 <div class="donation">
                     <h3 class="text-medium content-item__title">
                         You can also make a donation
@@ -158,16 +172,18 @@
                     </p>
                 </div>
             </div>
-        </main>
-        <footer class="footer">
-            <div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__column">
                 <h3 class="text-medium content-item__title">
                     For questions and suggestions
                 </h3>
                 <div class="footer__navbar">
                     <ul>
                         <li>
-                            <a href="email@shelter.com">
+                            <a href="mailto:email@shelter.com">
                                 <img src="assets/icon-email.svg" alt="">
                                 email@shelter.com
                             </a>
@@ -181,20 +197,20 @@
                     </ul>
                 </div>
             </div>
-            <div>
+            <div class="footer__column">
                 <h3 class="text-medium content-item__title">
                     We are waiting for your visit
                 </h3>
                 <div class="footer__navbar">
                     <ul>
                         <li>
-                            <a href="">
+                            <a target="_blank" href="https://www.google.com/maps?q=1 Central Street, Boston (entrance from the store)">
                                 <img src="assets/pin.png" alt="">
                                 1 Central Street, Boston (entrance from the store)
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a target="_blank" href="https://www.google.com/maps?q=18 South Park, London">
                                 <img src="assets/pin.png" alt="">
                                 18 South Park, London
                             </a>
@@ -203,8 +219,8 @@
                 </div>
             </div>
             <img src="assets/footer-puppy.png" alt="">
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>
